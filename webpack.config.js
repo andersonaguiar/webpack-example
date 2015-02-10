@@ -1,14 +1,20 @@
 var webpack = require('webpack');
 
-module.exports = {
-  entry : {
-    index : './js/modules/index.js',
-    about: './js/modules/about.js'
-  },
+var src = './app/src/assets/js/modules',
+    dest = './app/build/assets/js';
 
-  output : {
-    path: 'app',
-    publicPath: './app/',
-    filename : '[name].js'
-  }
+module.exports = {
+    src : src,
+    dest : dest,
+    watch: true,
+    entry : {
+        index : src + '/index.js',
+        about: src + '/about.js'
+    },
+
+    output : {
+        path: dest,
+        publicPath: dest,
+        filename : '[name].js'
+    }
 };
