@@ -1,3 +1,3 @@
 var gulp        = require('gulp');
 
-gulp.task('build', ['images', 'uglifyJs']);
+gulp.task('build', ['images', 'uglifyJs', 'webpack:build']);

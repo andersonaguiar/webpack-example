@@ -10,4 +10,7 @@ gulp.task('watch', ['browserSync'], function(callback) {
 
     // markup
     gulp.watch(config.markup.src, ['markup']);
+
+    // webpack
+    gulp.watch(config.webpack.src + '/**/*.js', ["webpack:build-dev"]);
 });

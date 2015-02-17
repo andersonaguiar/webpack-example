@@ -12,7 +12,7 @@ module.exports = {
     sass: { },
     less: { },
     webpack: {
-        src: src + 'assets/js/modules'
+        src: src + '/assets/js/modules'
     },
     js: {
         src: src + '/js/**/*',
@@ -21,7 +21,7 @@ module.exports = {
     browserSync: {
         server: {
           // Serve up our build folder
-          baseDir: dest
+          // baseDir: dest
         }
     },
     images: {
