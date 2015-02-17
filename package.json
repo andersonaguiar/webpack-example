@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "dependencies": {
-    "gulp-webpack": "^1.2.0",
-    "jquery": "*"
+    "jquery": "*",
   },
   "devDependencies": {
     "css-loader": "^0.9.1",
